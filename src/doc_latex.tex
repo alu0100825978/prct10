@@ -1,16 +1,15 @@
 
 \documentclass[spanish,a4paper,12pt]{article}
 
-\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,amsmath}
 \usepackage[spanish]{babel} %Corta palabras en español
 \usepackage[utf8]{inputenc} %Escribir con acentos, ñ...
-\usepackage[latin1]{inputenc}
 \usepackage[dvips]{epsfig}
 \usepackage{doc}
 \usepackage{graphicx} %inclusion de graficos
 
 \begin{document}
-\leftline{\bf Informe sobre $\pi$ usando \LaTeX{}}
+\title{\bf Informe sobre $\pi$ usando \LaTeX{}}
 \author{Cinthia Hernandez Trujillo}
 \date{11 de abril de 2014}
 \maketitle
@@ -46,7 +45,7 @@ Para cada valor de i, debemos calcular x, al tener el valor de x, nos vamos a f(
 \section{seccion 2}
 
 \subsection{Tabla}
-\begin{tabular}{c}
+\begin{tabular}{lrc}
     Intervalos & Subintervalo & Valor aproximado pi \\
     i=1 & [0,1] & 3.2 \\
     i=10 & [0,0.1], [0.1,0.2],... [0.9,1] &  3.142425985 \\
@@ -60,10 +59,10 @@ al ejecutar la práctica 5.
 \subsection{Imagen}
 \includegraphics[scale=0.3] {imagen1.eps}
 
-\begin{Bibliografia}
+\begin{thebibliography}{1}
 \bibitem{latex} Revista Iberoamericana de Matemáticas http://rmi.rsme.es/
 \bibitem{latex} Paquetes de LaTeX http://www.ciencia-explicada.com/2012/12/paquetes-de-latex-mi-lista-de.html
 \bibitem{latex} Inserción de imágenes en LaTeX http://navarroj.com/latex/figuras.html
-\end{Bibliografía}
+\end{thebibliography} {1}
 
 \end{document}

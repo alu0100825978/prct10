@@ -1,30 +1,68 @@
 
 \documentclass[spanish,a4paper,12pt]{article}
 
-\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,amsmath}
 \usepackage[spanish]{babel} %Corta palabras en español
 \usepackage[utf8]{inputenc} %Escribir con acentos, ñ...
-\usepackage[latin1]{inputenc}
 \usepackage[dvips]{epsfig}
 \usepackage{doc}
+\usepackage{graphicx} %inclusion de graficos
 
 \begin{document}
-\leftline{\bf Informe sobre $\pi$ usando \LaTeX{}}
+\title{\bf Informe sobre $\pi$ usando \LaTeX{}}
 \author{Cinthia Hernandez Trujillo}
 \date{11 de abril de 2014}
-
 \maketitle
 
 \begin{abstract}
-(resumen)
+En esta práctica, vamos a definir de manera sencilla, los pasos que hay que seguir para el cálculo de pi en una máquina de cómputo. Para ello, vamos 
 \end{abstract}
 
-\section{seccion 1}
-\subsection{subseccion 1}
-\subsection{subseccion 2}
+\section{Objetivos}
+A lo largo de la historia, muchos personajes han intentado averiguar el mayor número de decimales posibles de pi. Ahora con la computación, podemos calcular
+de una manera más fácil y rápida mayor decimales con una aproximación bastante aceptable.
+
+\subsection{Formula de aproximación de pi}
+La fórmula de aproximación de pi \footnote{la fórmula se calcula en cadena} viene dado por: 
+
+\begin{equation}
+   pi=1/n \sum_{i=1}^n f(x) 
+   \label{eq:pi}
+\end{equation}
+donde f(x) viene definido por: 
+\[
+f(x)=\frac{4}{(1+x)^2}
+\]
+a la vez, x se calcula de la siguiente manera:
+\[
+x=\frac{i- 1/2}{n}
+\]
+para i=1,2,...,n. A medida que aumentamos "i" la aproximación se acerca cada vez más al valor real de pi.
+
+\subsection{Explicacion de la formula}
+Para cada valor de i, debemos calcular x, al tener el valor de x, nos vamos a f(x), y seguidamente vamos a la ecuacion \ref{eq:pi} que nos da una aproximación de pi.  
 
 \section{seccion 2}
-\subsection{subseccion 1}
-\subsection{subseccion 2}
+
+\subsection{Tabla}
+\begin{tabular}{lrc}
+    Intervalos & Subintervalo & Valor aproximado pi \\
+    i=1 & [0,1] & 3.2 \\
+    i=10 & [0,0.1], [0.1,0.2],... [0.9,1] &  3.142425985 \\
+    i=100 & [0,0.01],... [0.99,1] & 3.14160098692 \\
+\end{tabular}
+
+Y así podemos ver como el valor aproximado de pi, a medida que aumenta el intervalo, se acerca al valor real de pi.
+La ecuación \ref{eq:pi} la hemos cogido del documento pdf de la práctica 5, y los resultados de la tabla \cite{tabular} los hemos calculado
+al ejecutar la práctica 5.
+
+\subsection{Imagen}
+\includegraphics[scale=0.3] {imagen1.eps}
+
+\begin{Bibliografia}
+\bibitem{latex} Revista Iberoamericana de Matemáticas http://rmi.rsme.es/
+\bibitem{latex} Paquetes de LaTeX http://www.ciencia-explicada.com/2012/12/paquetes-de-latex-mi-lista-de.html
+\bibitem{latex} Inserción de imágenes en LaTeX http://navarroj.com/latex/figuras.html
+\end{Bibliografía}
 
 \end{document}
