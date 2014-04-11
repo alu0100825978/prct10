@@ -1,0 +1,30 @@
+
+\documentclass[spanish,a4paper,12pt]{article}
+
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage[spanish]{babel} %Corta palabras en español
+\usepackage[utf8]{inputenc} %Escribir con acentos, ñ...
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{epsfig}
+\usepackage{doc}
+
+\begin{document}
+\leftline{\bf Informe sobre $\pi$ usando \LaTeX{}}
+\author{Cinthia Hernandez Trujillo}
+\date{11 de abril de 2014}
+
+\maketitle
+
+\begin{abstract}
+(resumen)
+\end{abstract}
+
+\section{seccion 1}
+\subsection{subseccion 1}
+\subsection{subseccion 2}
+
+\section{seccion 2}
+\subsection{subseccion 1}
+\subsection{subseccion 2}
+
+\end{document}
